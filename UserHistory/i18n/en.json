@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andrew Medeiros"
+		]
+	},
+	"userhistory": "User History",
+	"userhistory-desc": "Show the history of each wiki's user",
+	"userhistory-error-wgifsrc": ""
+}

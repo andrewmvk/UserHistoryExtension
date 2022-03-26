@@ -1,0 +1,63 @@
+{
+	"name": "UserHistory",
+	"version": "1.0.0",
+	"author": "Andrew Medeiros",
+	"url": "",
+	"descriptionmsg": "",
+	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"SpecialPages": {
+		"UserHistory": "SpecialUserHistory"
+	},
+	"atributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceGroupManager": {
+					"className": "\\UserHistory\\Extension",
+					"extPath": "/SpecialUserHistory"
+				}
+			},
+			"PermissionRegistry": {
+				"groupmanager-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"accountmanager",
+						"admin",
+						"maintenanceadmin"
+					]
+				}
+			}
+		}
+	},
+	"MessagesDirs": {
+		"UserHistory": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"UserHistoryAlias": "UserHistory.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialUserHistory": "SpecialUserHistory.php"
+	},
+	"ResourceModules": {
+		"ext.UserHistory": {
+			"styles": "UserHistory.css"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "UserHistory"
+	},
+	"config": {
+		"UserHistorySrc": {
+			"value": []
+		},
+		"UserHistoryAllowPath": {
+			"value": false
+		}
+	},
+	"manifest_version": 2
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Andrew Medeiros"
+		]
+	},
+	"userhistory": "User History",
+	"userhistory-desc": "Permite visualizar os histórico de um usuário por página",
+	"userhistory-error-wgifsrc": ""
+}
